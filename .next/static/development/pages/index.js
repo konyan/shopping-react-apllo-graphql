@@ -705,7 +705,7 @@ var Home = function Home(props) {
       lineNumber: 6
     },
     __self: this
-  }, "hey Home");
+  }, "hey, Home");
 }; // Home.propTypes = {
 // }
 

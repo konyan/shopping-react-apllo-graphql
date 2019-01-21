@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'next/link';
 
-const Home = props => {
+function sell(props) {
     return (
         <div>
-            hey, Home
+            Sell Page
         </div>
     )
 }
 
-// Home.propTypes = {
+sell.propTypes = {
 
-// }
+}
 
-export default Home
+export default sell
 
