@@ -2,6 +2,26 @@ import React from 'react'
 import Link from 'next/link'
 import Nav from './Nav'
 import styled from 'styled-components';
+import Router from 'next/router';
+import NProgress from 'nprogress';
+
+
+Router.onRouteChangeStart = () => {
+    console.log("Router : Start")
+    NProgress.start();
+}
+
+Router.onRouteChangeComplete = () => {
+    console.log("Router : Compolete")
+    NProgress.done();
+}
+
+Router.onRouteChangeError = () => {
+    console.log("Router : Error")
+    NProgress.done();
+
+}
+
 
 const Logo = styled.h1`
 
